@@ -1,13 +1,14 @@
 class Bot:
     #1 steal
     #0 share
-    def __init__(self, name):
+    def __init__(self, name, totround):
         self.name = name
         self.score = 0
         self.history = []
         self.max_history = 2 # max prev moves to look at
         self.prev_opp_2_moves = [] # storing previous moves
         self.fool_me_twice = 0 # prevent letting the opponent get the advantage
+        self.totround = totround
 
     def choose(self, current_round, prev_round, prev_opponent_choice):
         if prev_opponent_choice != None:

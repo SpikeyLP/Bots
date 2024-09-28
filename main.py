@@ -23,7 +23,7 @@ class Bot:
 
 class Game:
     def __init__(self):
-        self.totround = 40  # Set total rounds here
+        self.totround = 8  # Set total rounds here
         self.bots = self.load_bots()  # Load bots after defining totround
 
     def load_bots(self):
