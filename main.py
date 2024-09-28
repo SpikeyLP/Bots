@@ -1,7 +1,7 @@
 import os
 import importlib
 
-output = 1  # Change this to 0 if you don't want any print statements.
+output = 0  # Change this to 0 if you don't want any print statements.
 
 class Bot:
     # 1 = steal 
