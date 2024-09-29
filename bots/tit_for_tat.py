@@ -10,5 +10,8 @@ class Bot:
     def choose(self, current_round, prev_round, prev_opponent_choice):
         if prev_opponent_choice != None:
             return prev_opponent_choice
-        else:
-            return 0
+
+        if current_round == self.totround:  # last round
+            return 1  # no point in splitting
+        
+        return 0  # split by default
